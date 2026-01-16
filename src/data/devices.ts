@@ -16,24 +16,14 @@ export type DeviceCategory = {
 };
 
 export const devicesData: DeviceCategory = {
-	OnePlus: [
+	Apple: [
 		{
-			name: "OnePlus 13T",
-			image: "/images/device/oneplus13t.png",
-			specs: "Gray / 16G + 1TB",
+			name: "MacBook Pro (Retina, 13 英寸, 2014 年中) ",
+			image: "/images/device/mbp_13-mul.png",
+			specs: "2.6GHz 双核 Intel Core i5 处理器/8G+256G/MacOS BigSur",
 			description:
-				"Flagship performance, Hasselblad imaging, 80W SuperVOOC.",
-			link: "https://www.oneplus.com/cn/13t",
-		},
-	],
-	Router: [
-		{
-			name: "GL-MT3000",
-			image: "/images/device/mt3000.png",
-			specs: "1000Mbps / 2.5G",
-			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
-			link: "https://www.gl-inet.cn/products/gl-mt3000/",
+				"MacOS BigSur 简便易用，异常强大，堪称了不起的先进操作系统.",
+			link: "https://support.apple.com/zh-cn/111942",
 		},
 	],
 };

@@ -30,8 +30,8 @@ import { rehypeImageWidth } from "./src/plugins/rehype-image-width.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.siteURL,
-	base: "/",
+	//site: siteConfig.siteURL,
+	base: "/Nyacchan.github.io",
 	trailingSlash: "always",
 
 	output: "static",
