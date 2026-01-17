@@ -4,7 +4,7 @@ published: 2026-01-07
 pubDate: 2026-01-07
 description: '第一次写md拿来练笔'
 author: '雫酱nyacchan'
-tag: '测试'
+tags: [Hello world]
 ---
 # 一个高中生的第一篇markdown格式文档
 hello，world  
@@ -19,9 +19,16 @@ hello，world
 可爱的呢  
 ### 感言
 累  
-累死  
-累死我  
-累死我了  
+~~累死~~  
+~~累死我~~
+~~累死我了~~  
 （大错特错）  
 累活我了  
 #### 就这样，加纳~
+---
+title: Draft Example
+published: 2026-01-17
+tags: [Hello world]
+category: 示例
+draft: false
+---
