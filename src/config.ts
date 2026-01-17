@@ -81,7 +81,7 @@ export const siteConfig: SiteConfig = {
 	// 标签样式配置
 	tagStyle: {
 		// 是否使用新样式（悬停高亮样式）还是旧样式（外框常亮样式）
-		useNewStyle: false,
+		useNewStyle: true,
 	},
 
 	// 壁纸模式配置
@@ -141,7 +141,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Nyacchan desu", // 主页横幅主标题
+			title: "Nyacchan", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
@@ -433,7 +433,7 @@ export const announcementConfig: AnnouncementConfig = {
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
+		text: "关于我是谁......", // 链接文本
 		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
