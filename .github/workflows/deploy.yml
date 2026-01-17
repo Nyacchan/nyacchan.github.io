@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+
+# 核心：使用 `pages` 作为工作流ID，这有助于被识别
+on:
+  # 推送到 master 分支时触发
+  push:
+    branches: ["master"]
+  # 允许手动在Actions页面触发
+  workflow_dispatch:
+
+# 为部署到 Pages 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许一个并发的部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5 # 使用官方配置页面的Action
+      - name: Build with Astro
+        uses: withastro/action@v3
+        with:
+          path: . # 明确指定项目根目录
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # 明确指定 Astro 构建输出目录
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
