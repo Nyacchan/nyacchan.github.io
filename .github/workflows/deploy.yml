@@ -1,20 +1,15 @@
 name: Deploy to GitHub Pages
 
-# 核心：使用 `pages` 作为工作流ID，这有助于被识别
 on:
-  # 推送到 master 分支时触发
   push:
     branches: ["master"]
-  # 允许手动在Actions页面触发
   workflow_dispatch:
 
-# 为部署到 Pages 设置权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 允许一个并发的部署
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -22,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
+    steps: # 关键修正：此行缩进已对齐
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
