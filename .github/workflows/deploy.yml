@@ -22,25 +22,20 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
+        steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      # 关键修改：为本次构建指定一个唯一的输出子目录
       - name: Build with Astro
         uses: withastro/action@v3
         with:
           path: .
-          # 添加一个动态的子目录，避免每次产物名称冲突
-          output: ./dist/${{ github.run_id }}
-
-      # 关键修改：上传时，路径指向我们指定的唯一子目录
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/${{ github.run_id }}
+          path: ./dist
+          name: github-pages-${{ github.run_id }}
 
   deploy:
     environment:
