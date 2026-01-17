@@ -26,15 +26,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # 使用官方配置页面的Action
+        uses: actions/configure-pages@v5
+
+      # 关键修改：为本次构建指定一个唯一的输出子目录
       - name: Build with Astro
         uses: withastro/action@v3
         with:
-          path: . # 明确指定项目根目录
+          path: .
+          # 添加一个动态的子目录，避免每次产物名称冲突
+          output: ./dist/${{ github.run_id }}
+
+      # 关键修改：上传时，路径指向我们指定的唯一子目录
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # 明确指定 Astro 构建输出目录
+          path: ./dist/${{ github.run_id }}
 
   deploy:
     environment:
