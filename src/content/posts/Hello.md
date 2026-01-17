@@ -1,5 +1,5 @@
 ---
-title: 'hello'
+title: 'Hello world'
 published: 2026-01-07
 pubDate: 2026-01-07
 description: '第一次写md拿来练笔'
@@ -26,7 +26,7 @@ hello，world
 累活我了  
 #### 就这样，加纳~
 ---
-title: Draft Example
+title: Hello world
 published: 2026-01-17
 tags: [Hello world]
 category: 示例
