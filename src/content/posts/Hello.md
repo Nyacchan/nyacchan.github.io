@@ -5,6 +5,7 @@ pubDate: 2026-01-07
 description: '第一次写md拿来练笔'
 author: '雫酱nyacchan'
 tags: [Hello world]
+category: 瞎写
 ---
 # 一个高中生的第一篇markdown格式文档
 hello，world  
@@ -20,7 +21,7 @@ hello，world
 ### 感言
 累  
 ~~累死~~  
-~~累死我~~
+~~累死我~~  
 ~~累死我了~~  
 （大错特错）  
 累活我了  
