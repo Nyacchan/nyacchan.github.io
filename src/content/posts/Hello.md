@@ -25,10 +25,3 @@ hello，world
 （大错特错）  
 累活我了  
 #### 就这样，加纳~
----
-title: Hello world
-published: 2026-01-17
-tags: [Hello world]
-category: 示例
-draft: false
----
