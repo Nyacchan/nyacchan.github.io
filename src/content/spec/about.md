@@ -46,4 +46,4 @@
 ---
 
 *使用Amashiro Natsuki (nachoneko)的部分插画 ❤️*  
-*致敬*
+*致敬！*
