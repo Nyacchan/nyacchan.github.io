@@ -45,4 +45,5 @@
 
 ---
 
-*使用 Astro 构建，受现代网页设计理念启发，衷心感谢 Amashiro Natsuki (nachoneko) ❤️*
+*使用Amashiro Natsuki (nachoneko)的部分插画 ❤️*  
+*致敬*
