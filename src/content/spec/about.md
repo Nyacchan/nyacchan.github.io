@@ -47,4 +47,4 @@
 
 *使用Amashiro Natsuki (nachoneko)的部分插画 ❤️*  
 *致敬！*  
-** 如有侵权，请联系zahngrenjie@outlook.com,我会立即删除相关内容 **
+**如有侵权，请联系zahngrenjie@outlook.com,我会立即删除相关内容**
