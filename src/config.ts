@@ -429,7 +429,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "看这", // 公告标题
-	content: "新世纪高考战士", // 公告内容
+	content: "新世纪高考战士,持续更新:高考数学公式总结", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -657,7 +657,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "千万别点这个", // 首页提示
 		skin: ["点我", "WoW"], // 换装提示
 		close: "Mamba out!", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
+		link: "https://github.com/", // 关于链接
 	},
 };
 
